@@ -1,0 +1,825 @@
+BACKUP ~jy\backup~ 
+AUTHOR ~bp_c_c@hotmail.com~ 
+LANGUAGE ~Chinese(Simplified)~ ~chs~ ~jy\chs\setup.tra~ 
+
+BEGIN @001 // jy Kit 
+
+ACTION_IF GAME_IS ~bgee bg2ee eet~ OR FILE_EXISTS_IN_GAME BD1000.are THEN BEGIN
+
+	INCLUDE ~jy/lib/fl#add_kit_ee.tpa~
+
+ADD_KIT ~jy~ 
+~jy             0 0 0 0 0 0 0 0~
+~jy 0 0 0 0 0 0 0 0 0 3 0 0 0 0 3 0 1 3 0 0 0 1 0 0 0 0 3 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~jy             9       9       9       9      16       3~
+~jy             0       0       0       0       0       0~
+~jy             0       0       0       0       0       0~
+~jy             0       0       0       0       0       0~
+~jy             1       1       1       1       1       1       1       1       1~
+~jy             0       0       0       0       0       0~
+~jy\jy\jy.2DA~
+~K_C_H K_C_E K_C_HE~
+~0x00008000 3~
+~jy~
+~*  *  *  BAG31  RINGa1  *  *  BOOTa1  AMULa1  BRACa1  BELTa1  *  *  *  POTN52,5  POTN52,5  POTN52,5  *  *  *~
+ SAY @002
+ SAY @003
+ SAY @004
+
+	LAF fl#add_kit_ee
+	  STR_VAR
+	    kit_name = jy
+	    clswpbon = ~0 0 3~
+	    hpclass = ~HPPRS~
+	END
+END
+COPY ~jy\jy\jy.2DA~ ~override\jy.2DA~ 
+
+COPY ~jy\jy\Lujy.2DA~ ~override\lujy.2DA~ 
+
+////////////////////神术与高阶///////////////////////////
+
+COPY ~jy\jy\jypr101.spl~ ~override\jypr101.spl~
+  SAY NAME1 @058
+  SAY NAME2 @058
+  SAY UNIDENTIFIED_DESC @059
+  SAY DESC @059
+
+COPY ~jy\jy\jypr102.spl~ ~override\jypr102.spl~
+  SAY NAME1 @060
+  SAY NAME2 @060
+  SAY UNIDENTIFIED_DESC @061
+  SAY DESC @061
+
+COPY ~jy\jy\jypr103.spl~ ~override\jypr103.spl~
+  SAY NAME1 @062
+  SAY NAME2 @062
+  SAY UNIDENTIFIED_DESC @063
+  SAY DESC @063
+
+COPY ~jy\jy\jypr104.spl~ ~override\jypr104.spl~
+  SAY NAME1 @064
+  SAY NAME2 @064
+  SAY UNIDENTIFIED_DESC @065
+  SAY DESC @065
+
+COPY ~jy\jy\jypr105.spl~ ~override\jypr105.spl~
+  SAY NAME1 @066
+  SAY NAME2 @066
+  SAY UNIDENTIFIED_DESC @067
+  SAY DESC @067
+
+COPY ~jy\jy\jypr106.spl~ ~override\jypr106.spl~
+  SAY NAME1 @068
+  SAY NAME2 @068
+  SAY UNIDENTIFIED_DESC @069
+  SAY DESC @069
+
+COPY ~jy\jy\jypr107.spl~ ~override\jypr107.spl~
+  SAY NAME1 @070
+  SAY NAME2 @070
+  SAY UNIDENTIFIED_DESC @071
+  SAY DESC @071
+
+COPY ~jy\jy\jypr108.spl~ ~override\jypr108.spl~
+  SAY NAME1 @072
+  SAY NAME2 @072
+  SAY UNIDENTIFIED_DESC @073
+  SAY DESC @073
+
+COPY ~jy\jy\jypr201.spl~ ~override\jypr201.spl~
+  SAY NAME1 @074
+  SAY NAME2 @074
+  SAY UNIDENTIFIED_DESC @075
+  SAY DESC @075
+
+COPY ~jy\jy\jypr202.spl~ ~override\jypr202.spl~
+  SAY NAME1 @076
+  SAY NAME2 @076
+  SAY UNIDENTIFIED_DESC @077
+  SAY DESC @077
+
+COPY ~jy\jy\jypr203.spl~ ~override\jypr203.spl~
+  SAY NAME1 @078
+  SAY NAME2 @078
+  SAY UNIDENTIFIED_DESC @079
+  SAY DESC @079
+
+COPY ~jy\jy\jypr204.spl~ ~override\jypr204.spl~
+  SAY NAME1 @080
+  SAY NAME2 @080
+  SAY UNIDENTIFIED_DESC @081
+  SAY DESC @081
+
+COPY ~jy\jy\jypr205.spl~ ~override\jypr205.spl~
+  SAY NAME1 @082
+  SAY NAME2 @082
+  SAY UNIDENTIFIED_DESC @083
+  SAY DESC @083
+
+COPY ~jy\jy\jypr206.spl~ ~override\jypr206.spl~
+  SAY NAME1 @084
+  SAY NAME2 @084
+  SAY UNIDENTIFIED_DESC @085
+  SAY DESC @085
+
+COPY ~jy\jy\jypr207.spl~ ~override\jypr207.spl~
+  SAY NAME1 @086
+  SAY NAME2 @086
+  SAY UNIDENTIFIED_DESC @087
+  SAY DESC @087
+
+COPY ~jy\jy\jypr208.spl~ ~override\jypr208.spl~
+  SAY NAME1 @088
+  SAY NAME2 @088
+  SAY UNIDENTIFIED_DESC @089
+  SAY DESC @089
+
+COPY ~jy\jy\jypr301.spl~ ~override\jypr301.spl~
+  SAY NAME1 @090
+  SAY NAME2 @090
+  SAY UNIDENTIFIED_DESC @091
+  SAY DESC @091
+
+COPY ~jy\jy\jypr302.spl~ ~override\jypr302.spl~
+  SAY NAME1 @092
+  SAY NAME2 @092
+  SAY UNIDENTIFIED_DESC @093
+  SAY DESC @093
+
+COPY ~jy\jy\jypr303.spl~ ~override\jypr303.spl~
+  SAY NAME1 @094
+  SAY NAME2 @094
+  SAY UNIDENTIFIED_DESC @095
+  SAY DESC @095
+
+COPY ~jy\jy\jypr304.spl~ ~override\jypr304.spl~
+  SAY NAME1 @096
+  SAY NAME2 @096
+  SAY UNIDENTIFIED_DESC @097
+  SAY DESC @097
+
+COPY ~jy\jy\jypr305.spl~ ~override\jypr305.spl~
+  SAY NAME1 @098
+  SAY NAME2 @098
+  SAY UNIDENTIFIED_DESC @099
+  SAY DESC @099
+
+COPY ~jy\jy\jypr306.spl~ ~override\jypr306.spl~
+  SAY NAME1 @100
+  SAY NAME2 @100
+  SAY UNIDENTIFIED_DESC @101
+  SAY DESC @101
+
+COPY ~jy\jy\jypr307.spl~ ~override\jypr307.spl~
+  SAY NAME1 @102
+  SAY NAME2 @102
+  SAY UNIDENTIFIED_DESC @103
+  SAY DESC @103
+
+COPY ~jy\jy\jypr308.spl~ ~override\jypr308.spl~
+  SAY NAME1 @104
+  SAY NAME2 @104
+  SAY UNIDENTIFIED_DESC @105
+  SAY DESC @105
+
+COPY ~jy\jy\jypr309.spl~ ~override\jypr309.spl~
+  SAY NAME1 @106
+  SAY NAME2 @106
+  SAY UNIDENTIFIED_DESC @107
+  SAY DESC @107
+
+COPY ~jy\jy\jypr401.spl~ ~override\jypr401.spl~
+  SAY NAME1 @108
+  SAY NAME2 @108
+  SAY UNIDENTIFIED_DESC @109
+  SAY DESC @109
+
+COPY ~jy\jy\jypr402.spl~ ~override\jypr402.spl~
+  SAY NAME1 @110
+  SAY NAME2 @110
+  SAY UNIDENTIFIED_DESC @111
+  SAY DESC @111
+
+COPY ~jy\jy\jypr403.spl~ ~override\jypr403.spl~
+  SAY NAME1 @112
+  SAY NAME2 @112
+  SAY UNIDENTIFIED_DESC @113
+  SAY DESC @113
+
+COPY ~jy\jy\jypr404.spl~ ~override\jypr404.spl~
+  SAY NAME1 @114
+  SAY NAME2 @114
+  SAY UNIDENTIFIED_DESC @115
+  SAY DESC @115
+
+COPY ~jy\jy\jypr405.spl~ ~override\jypr405.spl~
+  SAY NAME1 @116
+  SAY NAME2 @116
+  SAY UNIDENTIFIED_DESC @117
+  SAY DESC @117
+
+COPY ~jy\jy\jypr406.spl~ ~override\jypr406.spl~
+  SAY NAME1 @118
+  SAY NAME2 @118
+  SAY UNIDENTIFIED_DESC @119
+  SAY DESC @119
+
+COPY ~jy\jy\jypr407.spl~ ~override\jypr407.spl~
+  SAY NAME1 @120
+  SAY NAME2 @120
+  SAY UNIDENTIFIED_DESC @121
+  SAY DESC @121
+
+COPY ~jy\jy\jypr408.spl~ ~override\jypr408.spl~
+  SAY NAME1 @122
+  SAY NAME2 @122
+  SAY UNIDENTIFIED_DESC @123
+  SAY DESC @123
+
+COPY ~jy\jy\jypr409.spl~ ~override\jypr409.spl~
+  SAY NAME1 @124
+  SAY NAME2 @124
+  SAY UNIDENTIFIED_DESC @125
+  SAY DESC @125
+
+COPY ~jy\jy\jypr501.spl~ ~override\jypr501.spl~
+  SAY NAME1 @126
+  SAY NAME2 @126
+  SAY UNIDENTIFIED_DESC @127
+  SAY DESC @127
+
+COPY ~jy\jy\jypr502.spl~ ~override\jypr502.spl~
+  SAY NAME1 @128
+  SAY NAME2 @128
+  SAY UNIDENTIFIED_DESC @129
+  SAY DESC @129
+
+COPY ~jy\jy\jypr503.spl~ ~override\jypr503.spl~
+  SAY NAME1 @130
+  SAY NAME2 @130
+  SAY UNIDENTIFIED_DESC @131
+  SAY DESC @131
+
+COPY ~jy\jy\jypr504.spl~ ~override\jypr504.spl~
+  SAY NAME1 @132
+  SAY NAME2 @132
+  SAY UNIDENTIFIED_DESC @133
+  SAY DESC @133
+
+COPY ~jy\jy\jypr505.spl~ ~override\jypr505.spl~
+  SAY NAME1 @134
+  SAY NAME2 @134
+  SAY UNIDENTIFIED_DESC @135
+  SAY DESC @135
+
+COPY ~jy\jy\jypr506.spl~ ~override\jypr506.spl~
+  SAY NAME1 @136
+  SAY NAME2 @136
+  SAY UNIDENTIFIED_DESC @137
+  SAY DESC @137
+
+COPY ~jy\jy\jypr507.spl~ ~override\jypr507.spl~
+  SAY NAME1 @138
+  SAY NAME2 @138
+  SAY UNIDENTIFIED_DESC @139
+  SAY DESC @139
+
+COPY ~jy\jy\jypr508.spl~ ~override\jypr508.spl~
+  SAY NAME1 @140
+  SAY NAME2 @140
+  SAY UNIDENTIFIED_DESC @141
+  SAY DESC @141
+
+COPY ~jy\jy\jypr509.spl~ ~override\jypr509.spl~
+  SAY NAME1 @142
+  SAY NAME2 @142
+  SAY UNIDENTIFIED_DESC @143
+  SAY DESC @143
+
+COPY ~jy\jy\jypr510.spl~ ~override\jypr510.spl~
+  SAY NAME1 @144
+  SAY NAME2 @144
+  SAY UNIDENTIFIED_DESC @145
+  SAY DESC @145
+
+COPY ~jy\jy\jypr511.spl~ ~override\jypr511.spl~
+  SAY NAME1 @206
+  SAY NAME2 @206
+  SAY UNIDENTIFIED_DESC @207
+  SAY DESC @207
+
+COPY ~jy\jy\jypr601.spl~ ~override\jypr601.spl~
+  SAY NAME1 @146
+  SAY NAME2 @146
+  SAY UNIDENTIFIED_DESC @147
+  SAY DESC @147
+
+COPY ~jy\jy\jypr602.spl~ ~override\jypr602.spl~
+  SAY NAME1 @148
+  SAY NAME2 @148
+  SAY UNIDENTIFIED_DESC @149
+  SAY DESC @149
+
+COPY ~jy\jy\jypr603.spl~ ~override\jypr603.spl~
+  SAY NAME1 @150
+  SAY NAME2 @150
+  SAY UNIDENTIFIED_DESC @151
+  SAY DESC @151
+
+COPY ~jy\jy\jypr604.spl~ ~override\jypr604.spl~
+  SAY NAME1 @152
+  SAY NAME2 @152
+  SAY UNIDENTIFIED_DESC @153
+  SAY DESC @153
+
+COPY ~jy\jy\jypr605.spl~ ~override\jypr605.spl~
+  SAY NAME1 @154
+  SAY NAME2 @154
+  SAY UNIDENTIFIED_DESC @155
+  SAY DESC @155
+
+COPY ~jy\jy\jypr606.spl~ ~override\jypr606.spl~
+  SAY NAME1 @156
+  SAY NAME2 @156
+  SAY UNIDENTIFIED_DESC @157
+  SAY DESC @157
+
+COPY ~jy\jy\jypr607.spl~ ~override\jypr607.spl~
+  SAY NAME1 @158
+  SAY NAME2 @158
+  SAY UNIDENTIFIED_DESC @159
+  SAY DESC @159
+
+COPY ~jy\jy\jypr608.spl~ ~override\jypr608.spl~
+  SAY NAME1 @160
+  SAY NAME2 @160
+  SAY UNIDENTIFIED_DESC @161
+  SAY DESC @161
+
+COPY ~jy\jy\jypr609.spl~ ~override\jypr609.spl~
+  SAY NAME1 @162
+  SAY NAME2 @162
+  SAY UNIDENTIFIED_DESC @163
+  SAY DESC @163
+
+COPY ~jy\jy\jypr610.spl~ ~override\jypr610.spl~
+  SAY NAME1 @164
+  SAY NAME2 @164
+  SAY UNIDENTIFIED_DESC @165
+  SAY DESC @165
+
+COPY ~jy\jy\jypr611.spl~ ~override\jypr611.spl~
+  SAY NAME1 @166
+  SAY NAME2 @166
+  SAY UNIDENTIFIED_DESC @167
+  SAY DESC @167
+
+COPY ~jy\jy\jypr701.spl~ ~override\jypr701.spl~
+  SAY NAME1 @168
+  SAY NAME2 @168
+  SAY UNIDENTIFIED_DESC @169
+  SAY DESC @169
+
+COPY ~jy\jy\jypr702.spl~ ~override\jypr702.spl~
+  SAY NAME1 @170
+  SAY NAME2 @170
+  SAY UNIDENTIFIED_DESC @171
+  SAY DESC @171
+
+COPY ~jy\jy\jypr703.spl~ ~override\jypr703.spl~
+  SAY NAME1 @172
+  SAY NAME2 @172
+  SAY UNIDENTIFIED_DESC @173
+  SAY DESC @173
+
+COPY ~jy\jy\jypr704.spl~ ~override\jypr704.spl~
+  SAY NAME1 @174
+  SAY NAME2 @174
+  SAY UNIDENTIFIED_DESC @175
+  SAY DESC @175
+
+COPY ~jy\jy\jypr705.spl~ ~override\jypr705.spl~
+  SAY NAME1 @176
+  SAY NAME2 @176
+  SAY UNIDENTIFIED_DESC @177
+  SAY DESC @177
+
+COPY ~jy\jy\jypr706.spl~ ~override\jypr706.spl~
+  SAY NAME1 @178
+  SAY NAME2 @178
+  SAY UNIDENTIFIED_DESC @179
+  SAY DESC @179
+
+COPY ~jy\jy\jypr707.spl~ ~override\jypr707.spl~
+  SAY NAME1 @180
+  SAY NAME2 @180
+  SAY UNIDENTIFIED_DESC @181
+  SAY DESC @181
+
+COPY ~jy\jy\jypr708.spl~ ~override\jypr708.spl~
+  SAY NAME1 @182
+  SAY NAME2 @182
+  SAY UNIDENTIFIED_DESC @183
+  SAY DESC @183
+
+
+COPY ~jy\jy\jypr709.spl~ ~override\jypr709.spl~
+  SAY NAME1 @208
+  SAY NAME2 @208
+  SAY UNIDENTIFIED_DESC @209
+  SAY DESC @209
+
+COPY ~jy\jy\jypr801.spl~ ~override\jypr801.spl~
+  SAY NAME1 @184
+  SAY NAME2 @184
+  SAY UNIDENTIFIED_DESC @185
+  SAY DESC @185
+
+COPY ~jy\jy\jypr802.spl~ ~override\jypr802.spl~
+  SAY NAME1 @186
+  SAY NAME2 @186
+  SAY UNIDENTIFIED_DESC @187
+  SAY DESC @187
+
+COPY ~jy\jy\jypr803.spl~ ~override\jypr803.spl~
+  SAY NAME1 @188
+  SAY NAME2 @188
+  SAY UNIDENTIFIED_DESC @189
+  SAY DESC @189
+
+COPY ~jy\jy\jypr804.spl~ ~override\jypr804.spl~
+  SAY NAME1 @190
+  SAY NAME2 @190
+  SAY UNIDENTIFIED_DESC @191
+  SAY DESC @191
+
+COPY ~jy\jy\jypr805.spl~ ~override\jypr805.spl~
+  SAY NAME1 @192
+  SAY NAME2 @192
+  SAY UNIDENTIFIED_DESC @193
+  SAY DESC @193
+
+COPY ~jy\jy\jypr806.spl~ ~override\jypr806.spl~
+  SAY NAME1 @194
+  SAY NAME2 @194
+  SAY UNIDENTIFIED_DESC @195
+  SAY DESC @195
+
+COPY ~jy\jy\jypr807.spl~ ~override\jypr807.spl~
+  SAY NAME1 @196
+  SAY NAME2 @196
+  SAY UNIDENTIFIED_DESC @197
+  SAY DESC @197
+
+COPY ~jy\jy\jypr808.spl~ ~override\jypr808.spl~
+  SAY NAME1 @198
+  SAY NAME2 @198
+  SAY UNIDENTIFIED_DESC @199
+  SAY DESC @199
+
+COPY ~jy\jy\jypr809.spl~ ~override\jypr809.spl~
+  SAY NAME1 @200
+  SAY NAME2 @200
+  SAY UNIDENTIFIED_DESC @201
+  SAY DESC @201
+
+COPY ~jy\jy\jypr810.spl~ ~override\jypr810.spl~
+  SAY NAME1 @202
+  SAY NAME2 @202
+  SAY UNIDENTIFIED_DESC @203
+  SAY DESC @203
+
+COPY ~jy\jy\jypr811.spl~ ~override\jypr811.spl~
+  SAY NAME1 @204
+  SAY NAME2 @204
+  SAY UNIDENTIFIED_DESC @205
+  SAY DESC @205
+
+COPY ~jy\jy\jypr812.spl~ ~override\jypr812.spl~
+  
+////////////////////////////功夫特殊///////////////////////////////////////////
+COPY ~jy\jy\jy107.spl~ ~override\jy107.spl~
+  SAY NAME1 ~八卦步~
+  SAY NAME2 ~八卦步~
+  SAY UNIDENTIFIED_DESC ~八卦步~
+  SAY DESC ~八卦步~
+
+
+COPY ~jy\jy\jy307.spl~ ~override\jy307.spl~
+  SAY NAME1 ~神行百变~
+  SAY NAME2 ~神行百变~
+  SAY UNIDENTIFIED_DESC ~神行百变~
+  SAY DESC ~神行百变~
+
+COPY ~jy\jy\jy401.spl~ ~override\jy401.spl~
+  SAY NAME1 ~血刀大法~
+  SAY NAME2 ~血刀大法~
+  SAY UNIDENTIFIED_DESC ~血刀大法~
+  SAY DESC ~血刀大法~
+
+COPY ~jy\jy\jy405.spl~ ~override\jy405.spl~
+  SAY NAME1 ~金针~
+  SAY NAME2 ~金针~
+  SAY UNIDENTIFIED_DESC ~金针~
+  SAY DESC ~金针~
+
+COPY ~jy\jy\JY503A.spl~ ~override\JY503A.spl~
+  SAY NAME1 ~太极劲~
+  SAY NAME2 ~太极劲~
+  SAY UNIDENTIFIED_DESC ~太极劲~
+  SAY DESC ~太极劲~
+
+COPY ~jy\jy\jy503B.spl~ ~override\jy503B.spl~
+  SAY NAME1 ~太极劲~
+  SAY NAME2 ~太极劲~
+  SAY UNIDENTIFIED_DESC ~太极劲~
+  SAY DESC ~太极劲~
+
+
+COPY ~jy\jy\jy507.spl~ ~override\jy507.spl~
+  SAY NAME1 ~四象步法~
+  SAY NAME2 ~四象步法~
+  SAY UNIDENTIFIED_DESC ~四象步法~
+  SAY DESC ~四象步法~
+
+COPY ~jy\jy\jy611.spl~ ~override\jy611.spl~
+  SAY NAME1 ~蛤蟆功~
+  SAY NAME2 ~蛤蟆功~
+  SAY UNIDENTIFIED_DESC ~蛤蟆功~
+  SAY DESC ~蛤蟆功~
+
+COPY ~jy\jy\jy701a.spl~ ~override\jy701a.spl~
+  SAY NAME1 ~凌波微步~
+  SAY NAME2 ~凌波微步~
+  SAY UNIDENTIFIED_DESC ~凌波微步~
+  SAY DESC ~凌波微步~
+
+COPY ~jy\jy\jy701b.spl~ ~override\jy701b.spl~
+  SAY NAME1 ~凌波微步~
+  SAY NAME2 ~凌波微步~
+  SAY UNIDENTIFIED_DESC ~凌波微步~
+  SAY DESC ~凌波微步~
+
+COPY ~jy\jy\jy807.spl~ ~override\jy807.spl~
+  SAY NAME1 ~太玄神功~
+  SAY NAME2 ~太玄神功~
+  SAY UNIDENTIFIED_DESC ~太玄神功~
+  SAY DESC ~太玄神功~
+
+//////////////////////////////////////////////////////////////////////
+COPY ~jy\jy\jy101.itm~ ~override\jy101.itm~
+  SAY NAME2 ~长拳~
+  SAY DESC ~长拳~
+
+COPY ~jy\jy\jy102.itm~ ~override\jy102.itm~
+  SAY NAME2 ~五虎断门刀~
+  SAY DESC ~五虎断门刀~
+
+COPY ~jy\jy\jy103.itm~ ~override\jy103.itm~
+  SAY NAME2 ~唐诗剑法~
+  SAY DESC ~唐诗剑法~
+
+COPY ~jy\jy\jy104.itm~ ~override\jy104.itm~
+  SAY NAME2 ~擒拿手~
+  SAY DESC ~擒拿手~
+
+COPY ~jy\jy\jy105.itm~ ~override\jy105.itm~
+  SAY NAME2 ~大慈大悲千叶手~
+  SAY DESC ~大慈大悲千叶手~
+
+COPY ~jy\jy\jy106.itm~ ~override\jy106.itm~
+  SAY NAME2 ~金钱镖~
+  SAY DESC ~金钱镖~
+
+COPY ~jy\jy\jy107.itm~ ~override\jy107.itm~
+  SAY NAME2 ~八卦步法~
+  SAY DESC ~八卦步法~
+
+COPY ~jy\jy\jy108.itm~ ~override\jy108.itm~
+  SAY NAME2 ~石灰瓶~
+  SAY DESC ~石灰瓶~
+
+COPY ~jy\jy\jy201.itm~ ~override\jy201.itm~
+  SAY NAME2 ~八卦刀~
+  SAY DESC ~八卦刀~
+
+COPY ~jy\jy\jy202.itm~ ~override\jy202.itm~
+  SAY NAME2 ~五岳剑法~
+  SAY DESC ~五岳剑法~
+
+COPY ~jy\jy\jy203.itm~ ~override\jy203.itm~
+  SAY NAME2 ~鹰爪手~
+  SAY DESC ~鹰爪手~
+
+COPY ~jy\jy\jy204.itm~ ~override\jy204.itm~
+  SAY NAME2 ~罗汉拳~
+  SAY DESC ~罗汉拳~
+
+COPY ~jy\jy\jy205.itm~ ~override\jy205.itm~
+  SAY NAME2 ~醉拳~
+  SAY DESC ~醉拳~
+
+COPY ~jy\jy\jy206.itm~ ~override\jy206.itm~
+  SAY NAME2 ~飞燕银梭~
+  SAY DESC ~飞燕银梭~
+
+COPY ~jy\jy\jy207.itm~ ~override\jy207.itm~
+  SAY NAME2 ~绵掌~
+  SAY DESC ~绵掌~
+
+COPY ~jy\jy\jy301.itm~ ~override\jy301.itm~
+  SAY NAME2 ~狂风刀法~
+  SAY DESC ~狂风刀法~
+
+COPY ~jy\jy\jy302.itm~ ~override\jy302.itm~
+  SAY NAME2 ~柔云剑法~
+  SAY DESC ~柔云剑法~
+
+COPY ~jy\jy\jy303.itm~ ~override\jy303.itm~
+  SAY NAME2 ~般若掌~
+  SAY DESC ~般若掌~
+
+COPY ~jy\jy\jy304.itm~ ~override\jy304.itm~
+  SAY NAME2 ~逍遥游~
+  SAY DESC ~逍遥游~
+
+COPY ~jy\jy\jy305.itm~ ~override\jy305.itm~
+  SAY NAME2 ~金蛇锥~
+  SAY DESC ~金蛇锥~
+
+COPY ~jy\jy\jy306.itm~ ~override\jy306.itm~
+  SAY NAME2 ~大力金刚指~
+  SAY DESC ~大力金刚指~
+
+COPY ~jy\jy\jy307.itm~ ~override\jy307.itm~
+  SAY NAME2 ~神行百变~
+  SAY DESC ~神行百变~
+
+COPY ~jy\jy\jy308.itm~ ~override\jy308.itm~
+  SAY NAME2 ~五毒神掌~
+  SAY DESC ~五毒神掌~
+
+COPY ~jy\jy\jy401.itm~ ~override\jy401.itm~
+  SAY NAME2 ~血刀大法~
+  SAY DESC ~血刀大法~
+
+COPY ~jy\jy\jy402.itm~ ~override\jy402.itm~
+  SAY NAME2 ~百花错拳~
+  SAY DESC ~百花错拳~
+
+COPY ~jy\jy\jy403.itm~ ~override\jy403.itm~
+  SAY NAME2 ~冰蚕掌~
+  SAY DESC ~冰蚕掌~
+
+COPY ~jy\jy\jy404.itm~ ~override\jy404.itm~
+  SAY NAME2 ~兰花拂穴手~
+  SAY DESC ~兰花拂穴手~
+
+COPY ~jy\jy\jy405.itm~ ~override\jy405.itm~
+  SAY NAME2 ~芙蓉金针~
+  SAY DESC ~芙蓉金针~
+
+COPY ~jy\jy\jy406.itm~ ~override\jy406.itm~
+  SAY NAME2 ~黑玉断续膏~
+  SAY DESC ~黑玉断续膏~
+
+COPY ~jy\jy\jy407.itm~ ~override\jy407.itm~
+  SAY NAME2 ~生生造化丹~
+  SAY DESC ~生生造化丹~
+
+COPY ~jy\jy\jy501.itm~ ~override\jy501.itm~
+  SAY NAME2 ~胡家刀法~
+  SAY DESC ~胡家刀法~
+
+COPY ~jy\jy\jy502.itm~ ~override\jy502.itm~
+  SAY NAME2 ~苗家剑法~
+  SAY DESC ~苗家剑法~
+
+COPY ~jy\jy\jy503.itm~ ~override\jy503.itm~
+  SAY NAME2 ~太极拳~
+  SAY DESC ~太极拳~
+
+COPY ~jy\jy\jy504.itm~ ~override\jy504.itm~
+  SAY NAME2 ~空明拳~
+  SAY DESC ~空明拳~
+
+COPY ~jy\jy\jy505.itm~ ~override\jy505.itm~
+  SAY NAME2 ~铁掌~
+  SAY DESC ~铁掌~
+
+COPY ~jy\jy\jy506.itm~ ~override\jy506.itm~
+  SAY NAME2 ~九阴白骨爪~
+  SAY DESC ~九阴白骨爪~
+
+COPY ~jy\jy\jy507.itm~ ~override\jy507.itm~
+  SAY NAME2 ~四象步法~
+  SAY DESC ~四象步法~
+
+COPY ~jy\jy\jy508.itm~ ~override\jy508.itm~
+  SAY NAME2 ~化功大法~
+  SAY DESC ~化功大法~
+
+COPY ~jy\jy\jy601.itm~ ~override\jy601.itm~
+  SAY NAME2 ~玄铁剑法~
+  SAY DESC ~玄铁剑法~
+
+COPY ~jy\jy\jy602.itm~ ~override\jy602.itm~
+  SAY NAME2 ~黯然销魂掌~
+  SAY DESC ~黯然销魂掌~
+
+COPY ~jy\jy\jy603.itm~ ~override\jy603.itm~
+  SAY NAME2 ~玄冥神掌~
+  SAY DESC ~玄冥神掌~
+
+COPY ~jy\jy\jy604.itm~ ~override\jy604.itm~
+  SAY NAME2 ~斗转星移~
+  SAY DESC ~斗转星移~
+
+COPY ~jy\jy\jy605.itm~ ~override\jy605.itm~
+  SAY NAME2 ~擒龙功~
+  SAY DESC ~擒龙功~
+
+COPY ~jy\jy\jy606.itm~ ~override\jy606.itm~
+  SAY NAME2 ~吸星大法~
+  SAY DESC ~吸星大法~
+
+COPY ~jy\jy\jy607.itm~ ~override\jy607.itm~
+  SAY NAME2 ~一阳指~
+  SAY DESC ~一阳指~
+
+COPY ~jy\jy\jy608.itm~ ~override\jy608.itm~
+  SAY NAME2 ~玉蜂针~
+  SAY DESC ~玉蜂针~
+
+COPY ~jy\jy\jy609.itm~ ~override\jy609.itm~
+  SAY NAME2 ~冰魄银针~
+  SAY DESC ~冰魄银针~
+
+COPY ~jy\jy\jy701.itm~ ~override\jy701.itm~
+  SAY NAME2 ~凌波微步~
+  SAY DESC ~凌波微步~
+
+COPY ~jy\jy\jy702.itm~ ~override\jy702.itm~
+  SAY NAME2 ~六脉神剑~
+  SAY DESC ~六脉神剑~
+
+COPY ~jy\jy\jy703.itm~ ~override\jy703.itm~
+  SAY NAME2 ~独孤九剑~
+  SAY DESC ~独孤九剑~
+
+COPY ~jy\jy\jy704.itm~ ~override\jy704.itm~
+  SAY NAME2 ~降龙十八掌~
+  SAY DESC ~降龙十八掌~
+
+COPY ~jy\jy\jy705.itm~ ~override\jy705.itm~
+  SAY NAME2 ~打狗棒法~
+  SAY DESC ~打狗棒法~
+
+COPY ~jy\jy\jy706.itm~ ~override\jy706.itm~
+  SAY NAME2 ~生死符~
+  SAY DESC ~生死符~
+
+COPY ~jy\jy\jy707.itm~ ~override\jy707.itm~
+  SAY NAME2 ~北冥神功~
+  SAY DESC ~北冥神功~
+//////////////////////////////////////////////////////////////////////
+COPY ~jy\jy\jy803.spl~ ~override\jy803.spl~
+COPY ~jy\jy\jylo303.spl~ ~override\jylo303.spl~
+COPY ~jy\jy\jylo308.spl~ ~override\jylo308.spl~
+COPY ~jy\jy\jylo401.spl~ ~override\jylo401.spl~
+COPY ~jy\jy\jylo403.spl~ ~override\jylo403.spl~
+COPY ~jy\jy\jylo506.spl~ ~override\jylo506.spl~
+COPY ~jy\jy\jylo508.spl~ ~override\jylo508.spl~
+COPY ~jy\jy\jylo510.spl~ ~override\jylo510.spl~
+COPY ~jy\jy\jylo511.spl~ ~override\jylo511.spl~
+COPY ~jy\jy\jylo602.spl~ ~override\jylo602.spl~
+COPY ~jy\jy\jylo603.spl~ ~override\jylo603.spl~
+COPY ~jy\jy\jylo606.spl~ ~override\jylo606.spl~
+COPY ~jy\jy\jylo608.spl~ ~override\jylo608.spl~
+COPY ~jy\jy\jylo609.spl~ ~override\jylo609.spl~
+COPY ~jy\jy\jylo611.spl~ ~override\jylo611.spl~
+COPY ~jy\jy\jylo704.spl~ ~override\jylo704.spl~
+COPY ~jy\jy\jylo705.spl~ ~override\jylo705.spl~
+COPY ~jy\jy\jylo01.spl~ ~override\jylo01.spl~
+COPY ~jy\jy\jysk01.spl~ ~override\jysk01.spl~
+COPY ~jy\jy\jylo303.eff~ ~override\jylo303.eff~
+COPY ~jy\jy\jylo308.eff~ ~override\jylo308.eff~
+COPY ~jy\jy\jylo401.eff~ ~override\jylo401.eff~
+COPY ~jy\jy\jylo403.eff~ ~override\jylo403.eff~
+COPY ~jy\jy\jylo506.eff~ ~override\jylo506.eff~
+COPY ~jy\jy\jylo508.eff~ ~override\jylo508.eff~
+COPY ~jy\jy\jylo510.eff~ ~override\jylo510.eff~
+COPY ~jy\jy\jylo511.eff~ ~override\jylo511.eff~
+COPY ~jy\jy\jylo602.eff~ ~override\jylo602.eff~
+COPY ~jy\jy\jylo603.eff~ ~override\jylo603.eff~
+COPY ~jy\jy\jylo606.eff~ ~override\jylo606.eff~
+COPY ~jy\jy\jylo608.eff~ ~override\jylo608.eff~
+COPY ~jy\jy\jylo609.eff~ ~override\jylo609.eff~
+COPY ~jy\jy\jylo611.eff~ ~override\jylo611.eff~
+COPY ~jy\jy\jylo704.eff~ ~override\jylo704.eff~
+COPY ~jy\jy\jylo705.eff~ ~override\jylo705.eff~
+COPY ~jy\jy\blun01.itm~ ~override\blun01.itm~
+COPY ~jy\jy\blun31.itm~ ~override\blun31.itm~
+
+AT_INTERACTIVE_EXIT ~jy\readme.txt~
